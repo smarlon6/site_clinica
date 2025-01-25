@@ -76,8 +76,8 @@ THIRD_APPS = [ # são as Lib/app que instalamos no projeto
 ]
 
 PROJECT_APPS = [ # são os apps que criamos no projeto 
-          'apps.base',
-        # 'apps.myapp',   # Removido esses apps que nao criamos ainda.
+    'apps.base',
+    'apps.pages',   
 ]
 
 # INSTALLED_APPS é a variavel que django entende para fazer a leitura \
