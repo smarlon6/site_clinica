@@ -1,11 +1,16 @@
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import Group
 from django.shortcuts import render, redirect
 from contas.forms import CustomUserCreationForm 
+ 
 
 def timeout_view(request):
     return render(request, 'timeout.html')
+
+def logout_view(request):
+    logout(request)
+    return redirect('home')
 
 def login_view(request):
     if request.method == 'POST': # metodo POST
