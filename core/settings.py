@@ -76,6 +76,7 @@ THIRD_APPS = [ # são as Lib/app que instalamos no projeto
 ]
 
 PROJECT_APPS = [ # são os apps que criamos no projeto 
+    'apps.contas',
     'apps.base',
     'apps.pages',   
 ]
@@ -118,7 +119,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-
+AUTH_USER_MODEL = "contas.MyUser" 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
