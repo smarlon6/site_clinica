@@ -6,7 +6,7 @@ from django.urls import path, include  # Adicione a importação de 'include'
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    
+    path('contas/', include('contas.urls')), # Adiciona contas
     path('', include('pages.urls')), # url do app 
 ]
 
