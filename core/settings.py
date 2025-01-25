@@ -63,6 +63,7 @@ if not DEBUG:
 # Application definition
 
 DJANGO_APPS = [
+    'apps.contas', # atualiza
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,7 +77,6 @@ THIRD_APPS = [ # são as Lib/app que instalamos no projeto
 ]
 
 PROJECT_APPS = [ # são os apps que criamos no projeto 
-    'apps.contas',
     'apps.base',
     'apps.pages',   
 ]
