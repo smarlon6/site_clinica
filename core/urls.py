@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls), 
     path('contas/', include('contas.urls')), # Adiciona contas
     path('', include('pages.urls')), # url do app 
+    path('perfil/', include('perfil.urls')), # Adicionar
 ]
 
 if settings.DEBUG:
